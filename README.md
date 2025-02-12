@@ -42,8 +42,8 @@ Click
 
 Clone the repository
 
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/Otelbayev/seleor-app.git
+cd seleor-app
 
 Install dependencies
 
@@ -70,26 +70,6 @@ Run the backend server (inside the server folder):
 npm run start
 # or
 yarn start
-
-🔗 API Routes
-
-Authentication
-
-POST /api/auth/register – Register new users
-
-POST /api/auth/login – Login users
-
-Products
-
-GET /api/products – Get all products
-
-POST /api/products – Add a new product (admin only)
-
-Orders
-
-POST /api/orders – Place a new order
-
-GET /api/orders/:id – Get order details
 
 🌐 Deployment
 
