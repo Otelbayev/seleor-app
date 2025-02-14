@@ -6,7 +6,7 @@ import { FC } from "react";
 import { Button } from "../ui/button";
 import { Heart } from "lucide-react";
 import NoSSR from "react-no-ssr";
-import {formatPrice} from "@/lib/utils";
+import { formatPrice } from "@/lib/utils";
 
 interface Props {
   product: Partial<IProduct>;
@@ -28,18 +28,18 @@ const WatchListCard: FC<Props> = ({ product }) => {
             <Heart className="text-red-500 fill-red-500" />
           </Button>
         </div>
-
-
       </div>
-        <div className={"p-2"}>
-          <div className={"flex items-center justify-between text-sm"}>
-            <h1 className={"font-bold"}>{product.title}</h1>
-            <NoSSR>
-              <p className={"font-medium"}>{formatPrice(+product.price!)}</p>
-            </NoSSR>
-          </div>
-          <p className={"text-sm text-muted-foreground line-clamp-1 leading-1"}>{product.description}</p>
+      <div className={"p-2"}>
+        <div className={"flex items-center justify-between text-sm"}>
+          <h1 className={"font-bold"}>{product.title}</h1>
+          <NoSSR>
+            <p className={"font-medium"}>{formatPrice(+product.price!)}</p>
+          </NoSSR>
         </div>
+        <p className={"text-sm text-muted-foreground line-clamp-1 leading-1"}>
+          {product.description}
+        </p>
+      </div>
     </div>
   );
 };
