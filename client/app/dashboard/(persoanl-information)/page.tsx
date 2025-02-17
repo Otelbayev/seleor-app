@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { Banknote, Heart, Shuffle } from "lucide-react";
-import EditInformation from "./_components/edit-information";
+import EditInformation from "../_components/edit-information";
+
 
 const PersonalInformation = () => {
   return (
